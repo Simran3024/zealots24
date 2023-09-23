@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Present Students</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Present Students for {{ event }}</h1>
+    <ul>
+        {% for student in present_students %}
+        <li>{{ student }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Return to Dashboard</a>
+</body>
+</html>

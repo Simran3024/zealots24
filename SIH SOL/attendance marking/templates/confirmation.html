@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Attendance Marked Successfully</h1>
+    <p>Attendance for {{ selected_event }} has been marked.</p>
+    <p>Download the Excel file: <a href="{{ url_for('download_excel', excel_filename=excel_filename) }}">{{ excel_filename }}</a></p>
+    <a href="/">Return to Dashboard</a>
+    <a href="/select_event">Mark Attendance for Another Event</a>
+</body>
+</html>

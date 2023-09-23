@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Attendance Dashboard</h1>
+    <form method="POST" action="/select_event">
+        <label for="event">Select Event:</label>
+        <select id="event" name="event">
+            <option value="event1">Event 1</option>
+            <option value="event2">Event 2</option>
+            <!-- Add more events here -->
+        </select>
+        <button type="submit">Select Event</button>
+    </form>
+</body>
+</html>

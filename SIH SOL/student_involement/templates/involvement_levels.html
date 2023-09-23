@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Involvement Levels</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Involvement Levels for {{ event_name }}</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Involvement Level</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student['name'] }}</td>
+            <td>{{ student['level'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Events</a>
+</body>
+</html>

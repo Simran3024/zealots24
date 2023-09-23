@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <h2>Event Registration</h2>
+    <form action="/event_registration" method="POST">
+        <div>
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" required>
+        </div>
+        <div>
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required>
+        </div>
+        <div>
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="event-location">Location:</label>
+            <input type="text" id="event-location" name="event-location" required>
+        </div>
+        <div>
+            <label for="organizer-name">Organizer (Incharge) Name:</label>
+            <input type="text" id="organizer-name" name="organizer-name" required>
+        </div>
+        <div>
+            <label for="additional-details">Additional Details:</label>
+            <textarea id="additional-details" name="additional-details" rows="4"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

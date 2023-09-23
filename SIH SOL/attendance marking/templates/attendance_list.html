@@ -1,0 +1,15 @@
+<!-- Add a hidden input field to include the selected event in the form data -->
+<form method="POST" action="/mark_attendance">
+    <input type="hidden" name="selected_event" value="{{ selected_event }}">
+    <ul>
+        {% for student in students %}
+        <li>
+            <label>
+                <input type="checkbox" name="attendance[]" value="{{ student }}">
+                {{ student }}
+            </label>
+        </li>
+        {% endfor %}
+    </ul>
+    <button type="submit">Mark Attendance</button>
+</form>
